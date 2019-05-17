@@ -12,7 +12,7 @@ class Item(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Endpoint for the items": "/items/{id}?q={name}"}
 
 
 @app.get("/items/{item_id}")
